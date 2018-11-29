@@ -1,0 +1,92 @@
+nav {
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 200px 80px 80px auto 200px 80px;
+    width: 100vw;
+    height: 50px;
+    align-items: center;
+    text-align: center;
+    background-color: #d3d3d3;
+}
+
+nav > div {
+    height: 100%;
+    align-content: center;
+    margin: auto;
+}
+
+.logo, .login {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.logo {
+    background-image: url(../img/logo.png);
+}
+
+.login {
+    background-image: url(../img/user.png)
+}
+
+
+.football:hover {
+    color: darkviolet;
+}
+
+.basketball:hover {
+    color: orangered;
+}
+
+.basketball:hover::before {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    content: "\f434 ";
+}
+
+.football:hover::before {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    content: "\f1e3 ";
+}
+
+.hoverable:hover {
+    transition-timing-function: width;
+    transition-duration: 0.2s;
+}
+
+.hoverable::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    transition: width .3s;
+}
+
+.football::after{
+    background-color: darkviolet;
+}
+
+.basketball::after {
+    background-color: orangered;
+}
+
+.hoverable:hover::after {
+    width: 100%;
+}
+
+
+.basketball:not(:hover::before){
+    color: white;
+    transition-timing-function: ease-out;
+    transition-duration: 5s;
+}
+
+nav input[type=search] {
+    height: 100%;
+    border: none;
+    border-radius: 7px;
+    padding: 3px;
+}
