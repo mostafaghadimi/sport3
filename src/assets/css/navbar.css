@@ -78,10 +78,9 @@ nav > div {
 }
 
 
-.basketball:not(:hover::before){
-    color: white;
+.basketball:not(:hover), .football:not(:hover){
     transition-timing-function: ease-out;
-    transition-duration: 5s;
+    transition-duration: 1s;
 }
 
 nav input[type=search] {
@@ -89,4 +88,64 @@ nav input[type=search] {
     border: none;
     border-radius: 7px;
     padding: 3px;
+}
+
+.guest {
+    position: relative;
+    float: left;
+    left: 0;
+    top: 0;
+    padding: 5px;
+    height: auto;
+    width: 100px;
+    text-align: center;
+    visibility: hidden;
+}
+
+.guestLogin, .guestSignUp {
+    width: 100%;
+    height: 25px;
+    margin-top: 5px;
+    border: none;
+}
+
+.guestLogin:hover, .guestSignUp:hover {
+    background-color: rgb(0, 0, 63);
+    color: white;
+    transition-duration: 1s;
+    transition-timing-function: ease-out
+}
+
+.guestSignUp:hover::after {
+    content: '  \f234';
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 600;
+
+}
+
+.guestLogin:hover::after {
+    content: '  \f2f6';
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 600;
+}
+
+/* TODO: responsiveness */
+/* Mobile Devices */
+@media only screen and (max-width: 723px) {
+    
+}
+
+/* Tablet Devices */
+@media only screen and (max-width: 933px) {
+
+}
+
+/* Computers */
+@media only screen and (max-width: 1127px) {
+
+}
+
+/* Wide-Screens */
+@media only screen and (min-width: 1127px) {
+
 }

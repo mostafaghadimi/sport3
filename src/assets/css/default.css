@@ -9,6 +9,10 @@
     direction: rtl;
 }
 
+body {
+    background-color: #edeef0;
+}
+
 a {
     color: inherit;
 }
