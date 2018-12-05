@@ -15,7 +15,6 @@ class Subnav extends Component {
                 {this.props.items.map((info) => {
                     var className = "subnavItem";
                     var dropDownIcon = <span></span>;
-                    var dropDownItems = <span></span>
                     if (!info.isDroppedDown){
                         if (info.isActive){
                             console.log('hello')
@@ -24,10 +23,6 @@ class Subnav extends Component {
                     }
                     else {
                         dropDownIcon = <i className="fas fa-caret-down"></i>
-                        info.dropDownItems.map((value) =>{
-                            dropDownItems += <span key={value}>{value}</span>
-                            console.log(value)
-                        })
                     }
                     var item = ( 
                         <span className={className} key={info.text.toString()}>
@@ -35,7 +30,7 @@ class Subnav extends Component {
                                 {info.text}
                                 {dropDownIcon}
                             </a>
-                            {dropDownItems}
+                            
                         </span>
                     );
                     return item;
