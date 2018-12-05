@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './assets/css/default.css'
 import './navbar.js'
 import Navbar from './navbar.js';
+import Comment from './comment.js'
 
 class App extends Component {
     constructor(props){
@@ -16,6 +17,7 @@ class App extends Component {
         return (
             <div>
                 <Navbar isLoggedIn = {this.state.isLoggedIn}/>
+                <Comment/>
             </div>
         )
     }
