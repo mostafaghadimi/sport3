@@ -46,11 +46,11 @@ class News extends Component {
                 <div className="commentReaderNews">
                     <div className="commentHeader">
                         <div className="commentAuthor">
-                            <i class="far fa-user"></i>
+                            <i className="far fa-user"></i>
                             مصطفی قدیمی
                         </div>
                         <div className="commentDate">
-                            <i class="far fa-calendar-alt"></i>
+                            <i className="far fa-calendar-alt"></i>
                             11 آذر 97
                         </div>
                     </div>

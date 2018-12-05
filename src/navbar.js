@@ -7,7 +7,8 @@ import './assets/css/navbar.css';
 class Navbar extends Component {
     constructor(props){
         super(props);
-        this.menuIcon = this.menuIcon.bind(this)
+        this.menuIcon = this.menuIcon.bind(this);
+        this.showMenu = this.showMenu.bind(this);
     }
 
     menuIcon (){
@@ -19,14 +20,22 @@ class Navbar extends Component {
             nav.style.transform = 'translateX(100%)';
             nav.style.transition = 'transform 0.2s ease-out';
         }
+        
         let toggleIcon = document.querySelector('.menuIcon');
-
         if (toggleIcon.className != 'menuIcon toggle') {
             toggleIcon.className += ' toggle';
         } else {
             toggleIcon.className = 'menuIcon';
         }
     }
+
+    showMenu(){
+        let toggleButton = document.querySelector('.loginSignupMenu');
+        if (toggleButton.getAttribute('visibility') === 'hidden'){
+            toggleButton.setAttribute('visibility', 'visible');
+        }
+    }
+
     render(){
         return (
             <div>
@@ -53,11 +62,20 @@ class Navbar extends Component {
                                     <input type="search" placeholder="جستجو..."/>
                                 </li>
                                 <li>
-                                    <span className="loginSignup"></span>
+                                    <span className="loginSignup" onClick={this.showMenu}></span>
+                                    <div className="loginSignupMenu">
+                                        <div>
+                                            <button className="guestLogin">ورود</button>
+                                        </div>
+                                        <div>
+                                            <button className="guestSignUp">ثبت‌نام</button>
+                                        </div>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
                     </div>
+                    
                 </nav>                    
                 <div className="menuIcon" onClick={this.menuIcon}>
                     <span className="icon icon-bars"></span>
@@ -68,12 +86,12 @@ class Navbar extends Component {
                     <ul id="menu">
                         <li>
                             <a href="#">
-                            فوتبال
+                                فوتبال
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                            بسکتبال
+                                بسکتبال
                             </a>
                         </li>
                     </ul>

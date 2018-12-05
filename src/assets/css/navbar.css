@@ -3,7 +3,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Calibri Light', 'B Yekan', Helvetica, sans-serif;    
+    font-family: 'Calibri Light', 'B Yekan', Helvetica, sans-serif;
 }
 
 a {
@@ -174,13 +174,57 @@ input[type='search'] {
     position: relative;
 }
 
+.loginSignupMenu {
+    width: 100px;
+    position: absolute;
+    top: 60px;
+    line-height: 0;
+    height: auto;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+    /* visibility: hidden; */
+}
 
-.loginSignup::after {
+
+.loginSignup::before {
     content: '\f2bd';
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
+    font-size: 18px;
 }
 
+.guestLogin,
+.guestSignUp {
+    width: 100%;
+    height: 25px;
+    border: none;
+    border-radius: 8px;
+}
+
+.guestSignUp {
+    margin-top: 10px;
+}
+
+.guestLogin:hover,
+.guestSignUp:hover {
+    background-color: rgb(0, 0, 63);
+    color: white;
+    transition-duration: 1s;
+    transition-timing-function: ease-out
+}
+
+.guestSignUp:hover::after {
+    content: '  \f234';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+}
+
+.guestLogin:hover::after {
+    content: '  \f2f6';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+}
 
 /*======================================================
                       Mobile Menu Menu Icon
