@@ -32,13 +32,10 @@ nav > div {
 }
 
 
-.football:hover {
-    color: darkviolet;
+.football:hover, .basketball:hover  {
+    color: black;
 }
 
-.basketball:hover {
-    color: orangered;
-}
 
 .basketball:hover::before {
     font-family: "Font Awesome 5 Free"; 
@@ -65,12 +62,8 @@ nav > div {
     transition: width .3s;
 }
 
-.football::after{
-    background-color: darkviolet;
-}
-
-.basketball::after {
-    background-color: orangered;
+.football::after, .basketball::after{
+    background-color: red;
 }
 
 .hoverable:hover::after {

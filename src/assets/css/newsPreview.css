@@ -1,0 +1,39 @@
+.newsPreviewContainer {
+    width: 100%;
+    margin: auto;
+
+}
+
+.newsPreview {
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    /* https://www.cssmatic.com/box-shadow */
+    -webkit-box-shadow: 0px 0px 25px 3px rgba(0, 0, 0, 0.37);
+    -moz-box-shadow: 0px 0px 25px 3px rgba(0, 0, 0, 0.37);
+    box-shadow: 0px 0px 25px 3px rgba(0, 0, 0, 0.37);
+}
+
+.newsPreviewImage>img {
+    width: 100%
+}
+
+.newsPreviewTitle {
+    padding: 10px;
+    direction: rtl;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.newsPreviewPreview {
+    padding: 10px;
+}
+
+.newsPreviewFooter {
+    padding: 10px;
+}
+
+.fa-comment, .fa-eye {
+    margin: 4px;
+}

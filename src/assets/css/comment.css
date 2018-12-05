@@ -1,7 +1,7 @@
 form {
     width: 320px;
-    /* float: left; */
     margin: 20px;
+    
 }
 
 form>div {
@@ -29,14 +29,20 @@ form textarea {
 form input:valid,
 form textarea:valid {
     background-color: white;
-    border-color: green
+    border-color: green;
+}
 
+form input:invalid, 
+form textarea:invalid{ 
+    background-color: white;
+    border-color: red;
 }
 
 form input:focus,
 form textarea:focus {
     border-color: #0077ff;
 }
+
 
 form input:focus+label,
 form textarea:focus+label {
@@ -88,6 +94,8 @@ form.commentSubmit textarea:focus+label {
     padding: 10px;
     width: 50%;
     margin: auto;
+    background-color: #8b8b8b;
+
 }
 
 .commentSendButton:hover{
