@@ -36,13 +36,28 @@ class News extends Component {
 
                         Dolorum perfecto scriptorem vix cu. Option apeirian pro no, nisl graece principes pro no. Dicta mundi his cu. Sit animal partiendo ad, option qualisque at mea. Dicunt senserit no sea, harum prodesset similique an eos. Vix nullam debitis cu, solum mandamus ea eum, choro officiis an pri. In eius movet efficiendi mei, sea putant gubergren at, pro no quot efficiantur.
                     </div>
-                    <div className="newsFooter"></div>
                 </div>
                 <div className="commentNews">
                     <div className="commentNewsTitle">
                         ثبت نظر
                     </div>
                     <Comment/>
+                </div>
+                <div className="commentReaderNews">
+                    <div className="commentHeader">
+                        <div className="commentAuthor">
+                            <i class="far fa-user"></i>
+                            مصطفی قدیمی
+                        </div>
+                        <div className="commentDate">
+                            <i class="far fa-calendar-alt"></i>
+                            11 آذر 97
+                        </div>
+                    </div>
+                    <hr/>
+                    <div className="commentReaderBody">
+                        بسیار عالی بود بسی لذت بردم عزیزان
+                    </div>
                 </div>
             </div>
         )

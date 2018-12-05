@@ -32,7 +32,7 @@
     text-align: justify;
 }
 
-.commentNews {
+.commentNews, .commentReaderNews {
     width: 60%;
     margin: auto;
     background-color: #fff;
@@ -42,4 +42,35 @@
 
 .commentNewsTitle{ 
     margin: 20px;
+}
+
+.commentReaderNews {
+    margin: 10px auto;
+}
+
+.commentHeader {
+    height: 30px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    direction: rtl;
+}
+
+.commentAuthor {
+    padding: 10px;
+}
+
+.commentDate {
+    text-align: left;
+    padding: 10px;
+}
+
+.commentReaderBody {
+    /* padding: 10px; */
+    direction: rtl;
+    margin: 10px;
+}
+
+hr {
+    margin-top: 5px;
 }
