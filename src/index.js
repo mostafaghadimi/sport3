@@ -6,6 +6,7 @@ import Navbar from './navbar.js';
 import Comment from './comment.js'
 import News from './news.js'
 import NewsPreview from './newsPreview.js';
+import Subnav from './subnav.js'
 
 class App extends Component {
     constructor(props){
@@ -19,7 +20,7 @@ class App extends Component {
         return (
             <div>
                 <Navbar isLoggedIn = {this.state.isLoggedIn}/>
-                <News/>
+                <Subnav items={[{text: 'اخبار', url: '#', isDroppedDown: false, dropDownItems: [], isActive: true}, {text: 'سلام', url: '#', isDroppedDown: true, dropDownItems: ['ahmad', 'zoghi'], isActive: true}]} />
                 {/* <Comment/> */}
             </div>
         )

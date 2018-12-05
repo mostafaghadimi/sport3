@@ -1,0 +1,17 @@
+.subnav {
+    width: 100vw;
+    height: 50px;
+    background-color: white;
+    padding: 10px;
+}
+
+.subnavItem {
+    margin: 10px;
+
+}
+
+.active {
+    font-weight: bold;
+    border-bottom: 2px red solid
+
+}
