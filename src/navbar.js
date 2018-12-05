@@ -1,43 +1,53 @@
 import React, {Component} from 'react';
 import './assets/css/navbar.css';
+import './assets/js/navbar.js'
+
 
 
 class Navbar extends Component {
     render(){
         return (
             <div>
-                <nav>
-                    <div className="logo"></div>
-                    <div className="hoverable football">
-                        <a href="#">
-                            فوتبال
-                        </a>
-                    </div>
-                    <div className="hoverable basketball">
-                        <a href="">
-                            بسکتبال 
-                        </a>
-                    </div>     
-                    <div></div>
-                    <div>
-                        <input type="search" placeholder="جستجو ..." />
-                    </div>
-                    <div className="login">
+                <nav id="navbar">
+                    <div className="nav-wrapper">
+                        <div className="logo">
+                        Sport3
+                        </div>
+
                         
+                        <ul id="menu">
+                        <li><span className="football"></span><a href="#" >فوتبال</a></li>
+                        <li className="basketball"><a href="#" >بسکتبال</a></li>
+                        </ul>
+
+                        <div className="search">
+                        <ul>
+                            <li>
+                                <input type="search" placeholder="جستجو..."/>
+                            </li>
+                            <li>
+                                <span className="loginSignup"></span>
+                            </li>
+                        </ul>
+                        </div>
                     </div>
-                    {/* TODO: signout */}
+                    </nav>
+
+
                     
-                </nav>
-                <div className="guest">
-                            خوش آمدید!
-                            <div>
-                                <button className="guestLogin">ورود</button>
-                            </div>
-                            <div>
-                                <button className="guestSignUp">ثبت‌نام</button>
-                            </div>
+                    <div className="menuIcon">
+                    <span className="icon icon-bars"></span>
+                    <span className="icon icon-bars overlay"></span>
+                    </div>
+
+
+                    <div className="overlay-menu">
+                    <ul id="menu">
+                        <li className="football"><a href="#">فوتبال</a></li>
+                        <li className="basketball"><a href="#">بسکتبال</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
         )
     }
 }
