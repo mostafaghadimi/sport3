@@ -3,12 +3,6 @@ import React, {Component} from 'react';
 import './assets/css/subnav.css'
 
 class Subnav extends Component {
-
-    constructor(props) {
-        super(props);
-        this.state = []
-    }
-
     render () {
         return (
             <div className="subnav">
@@ -17,7 +11,6 @@ class Subnav extends Component {
                     var dropDownIcon = <span></span>;
                     if (!info.isDroppedDown){
                         if (info.isActive){
-                            console.log('hello')
                             className += " active";
                         }
                     }

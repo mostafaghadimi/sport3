@@ -1,21 +1,29 @@
 form {
-    width: 320px;
     margin: 20px;
-    
 }
+
 
 form>div {
     position: relative;
     overflow: hidden;
 }
 
+form > div > input, form > div> textarea {
+    border: 1px solid #8b8b8b;
+    width: 70%;
+}@media (max-width: 640px) {
+    form > div > input, form > div > textarea {
+        width: 100%;
+    }
+}
+
 form>div+div {
     margin-top: 10px;
 }
 
+
 form input,
 form textarea {
-    width: 100%;
     /* border: 2px solid gray; */
     background: none;
     position: relative;
@@ -51,7 +59,6 @@ form textarea:focus+label {
     font-size: 70%;
     padding: 1px 6px;
     z-index: 2;
-    text-transform: uppercase;
 }
 
 form label {
@@ -74,8 +81,12 @@ form.commentSubmit textarea {
 form.commentSubmit label {
     top: 0;
     bottom: 0;
-    left: 0;
-    width: 100%;
+    right: 0;
+    width: 70%;
+}@media (max-width: 640px) {
+    form.commentSubmit label{
+        width: 100%;
+    }
 }
 
 form.commentSubmit input:focus,
@@ -94,7 +105,7 @@ form.commentSubmit textarea:focus+label {
     padding: 10px;
     width: 50%;
     margin: auto;
-    background-color: #8b8b8b;
+    background-color: #e6e6e6;
 
 }
 
