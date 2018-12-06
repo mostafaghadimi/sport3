@@ -20,9 +20,10 @@ class App extends Component {
         return (
             <div>
                 <Navbar isLoggedIn = {this.state.isLoggedIn}/>
-                <Subnav items={[{text: 'اخبار', url: '#', isDroppedDown: false, dropDownItems: [], isActive: true}, {text: 'سلام', url: '#', isDroppedDown: true, dropDownItems: ['ahmad', 'zoghi'], isActive: true}]} />
-                <News/>
-
+                <Subnav items={[{text: 'سلام', url: '#', isDroppedDown: false, dropDownItems: [], isActive: true}, {text: 'عرض', url: '#', isDroppedDown: false, dropDownItems: [], isActive: false}, {text: 'ادب', url: '#', isDroppedDown: true, dropDownItems: ['ahmad', 'zoghi'], isActive: false}]} />
+                <div class="main-container">
+                    <News/>
+                </div>
             </div>
         )
     }

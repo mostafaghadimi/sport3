@@ -62,6 +62,8 @@ class Navbar extends Component {
                                 <li>
                                     <input type="search" placeholder="جستجو..."/>
                                 </li>
+                            </ul>
+                            <ul>
                                 <li>
                                     <span className="loginSignup" onClick={this.showMenu}></span>
                                     {this.state.showMenu ? <ShowMenu/>: null}
@@ -73,7 +75,6 @@ class Navbar extends Component {
                 </nav>                    
                 <div className="menuIcon" onClick={this.menuIcon}>
                     <span className="icon icon-bars"></span>
-                    <span className="icon icon-bars overlay"></span>
                 </div>
 
                 <div className="overlay-menu">

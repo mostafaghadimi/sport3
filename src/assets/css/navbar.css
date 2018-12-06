@@ -1,5 +1,4 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'B Yekan', Helvetica, sans-serif;
@@ -72,7 +71,6 @@ a {
     float: right;
     list-style: none;
     margin-right: 14px;
-    margin-top: -2px;
     text-align: center;
     transition: transform 0.5s ease-out;
     -webkit-transition: transform 0.5s ease-out;
@@ -102,51 +100,31 @@ a {
     padding: 0 4px;
     position: relative;
     text-decoration: none;
-    transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
 }
 
 #navbar li a:hover {
     /* border-bottom: 1px solid rgb(28, 121, 184); */
-    color: rgb(28, 121, 184);
+    color: rgb(28, 79, 126);
     transition: all 1s ease;
     -webkit-transition: all 1s ease;
 }
 
 /* Animated Bottom Line */
-#navbar li a:before,
-#navbar li a:after {
+#navbar li a:before {
     content: '';
     position: absolute;
     width: 0%;
-    height: 1px;
-    bottom: -1px;
+    height: 2px;
+    bottom: 0px;
     background: rgb(13, 26, 38);
-}
-
-#navbar li a:before {
     left: 0;
-    transition: 0.5s;
-}
-
-#navbar li a:after {
-    background: rgb(13, 26, 38);
-    right: 0;
-    /* transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1); */
+    transition: 0.3s;
 }
 
 #navbar li a:hover:before {
     background: rgb(13, 26, 38);
     width: 100%;
-    transition: width 0.5s cubic-bezier((0.22, 0.61, 0.36, 1));
 }
-
-#navbar li a:hover:after {
-    background: transparent;
-    width: 100%;
-    /* transition: 0s; */
-}
-
 
 .search {
     float: left;
@@ -194,7 +172,7 @@ input[type='search'] {
     content: '\f2bd';
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .guestLogin,
@@ -203,6 +181,7 @@ input[type='search'] {
     height: 25px;
     border: none;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .guestSignUp {
@@ -211,9 +190,9 @@ input[type='search'] {
 
 .guestLogin:hover,
 .guestSignUp:hover {
-    background-color: rgb(0, 0, 63);
+    background-color: rgb(13, 26, 38);
     color: white;
-    transition-duration: 1s;
+    transition-duration: 0.2s;
     transition-timing-function: ease-out
 }
 
@@ -285,116 +264,6 @@ input[type='search'] {
         transition: 0.3s width 0.4s;
     }
 
-    /* Bars Shadows */
-    .icon-bars.overlay {
-        background: rgb(97, 114, 129);
-        background: rgb(183, 199, 211);
-        width: 20px;
-        animation: middleBar 3s infinite 0.5s;
-        -webkit-animation: middleBar 3s infinite 0.5s;
-    }
-
-    @keyframes middleBar {
-        0% {
-            width: 0px
-        }
-
-        50% {
-            width: 20px
-        }
-
-        100% {
-            width: 0px
-        }
-    }
-
-    @-webkit-keyframes middleBar {
-        0% {
-            width: 0px
-        }
-
-        50% {
-            width: 20px
-        }
-
-        100% {
-            width: 0px
-        }
-    }
-
-    .icon-bars.overlay::before {
-        background: rgb(97, 114, 129);
-        background: rgb(183, 199, 211);
-        width: 10px;
-        animation: topBar 3s infinite 0.2s;
-        -webkit-animation: topBar 3s infinite 0s;
-    }
-
-    @keyframes topBar {
-        0% {
-            width: 0px
-        }
-
-        50% {
-            width: 10px
-        }
-
-        100% {
-            width: 0px
-        }
-    }
-
-    @-webkit-keyframes topBar {
-        0% {
-            width: 0px
-        }
-
-        50% {
-            width: 10px
-        }
-
-        100% {
-            width: 0px
-        }
-    }
-
-    .icon-bars.overlay::after {
-        background: rgb(97, 114, 129);
-        background: rgb(183, 199, 211);
-        width: 15px;
-        animation: bottomBar 3s infinite 1s;
-        -webkit-animation: bottomBar 3s infinite 1s;
-    }
-
-    @keyframes bottomBar {
-        0% {
-            width: 0px
-        }
-
-        50% {
-            width: 15px
-        }
-
-        100% {
-            width: 0px
-        }
-    }
-
-    @-webkit-keyframes bottomBar {
-        0% {
-            width: 0px
-        }
-
-        50% {
-            width: 15px
-        }
-
-        100% {
-            width: 0px
-        }
-    }
-
-
     /* Toggle Menu Icon */
     .menuIcon.toggle .icon-bars {
         top: 5px;
@@ -415,13 +284,6 @@ input[type='search'] {
         transition-delay: 0.1s;
         transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
-
-    .menuIcon.toggle .icon-bars.overlay {
-        width: 20px;
-        opacity: 0;
-        -webkit-transition: all 0s ease 0s;
-        transition: all 0s ease 0s;
-    }
 }
 
 
@@ -429,15 +291,14 @@ input[type='search'] {
                      Responsive Mobile Menu 
     ======================================================*/
 .overlay-menu {
-    background: lightblue;
+    background: rgb(226, 226, 226);
     color: rgb(13, 26, 38);
     display: flex;
-    align-items: center;
+    margin-top: 100px;
     justify-content: center;
     position: absolute;
     top: 0;
     right: 0;
-    padding-right: 15px;
     transform: translateX(100%);
     width: 100vw;
     height: 100vh;
@@ -449,23 +310,21 @@ input[type='search'] {
 .overlay-menu li {
     display: block;
     position: relative;
+    width: 100%;
 }
 
 .overlay-menu li a {
     display: block;
     font-size: 1.8em;
-    padding: 10px 0;
+    padding: 15px 0;
     text-align: center;
-    text-transform: uppercase;
-    -webkit-transition: color 0.3s ease;
-    transition: color 0.3s ease;
-    /*   -webkit-transition: 0.2s opacity 0.2s ease-out;
-      transition: 0.2s opacity 0.2s ease-out; */
 }
 
-.overlay-menu li a:hover,
-.overlay-menu li a:active {
-    color: rgb(28, 121, 184);
+.overlay-menu li:hover,
+.overlay-menu li:active {
+    background-color: rgb(95, 105, 112);
+    color: rgb(220, 226, 231);
     -webkit-transition: color 0.3s ease;
     transition: color 0.3s ease;
+    transition: background-color 0.3s ease;
 }
