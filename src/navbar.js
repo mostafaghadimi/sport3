@@ -1,14 +1,16 @@
 import React, {Component} from 'react';
 import './assets/css/navbar.css';
-// import './assets/js/navbar.js'
-
-
+import ShowMenu from './showMenu.js'
 
 class Navbar extends Component {
     constructor(props){
         super(props);
         this.menuIcon = this.menuIcon.bind(this);
         this.showMenu = this.showMenu.bind(this);
+
+        this.state = {
+            showMenu: false
+        }
     }
 
     menuIcon (){
@@ -30,10 +32,9 @@ class Navbar extends Component {
     }
 
     showMenu(){
-        let toggleButton = document.querySelector('.loginSignupMenu');
-        if (toggleButton.getAttribute('visibility') === 'hidden'){
-            toggleButton.setAttribute('visibility', 'visible');
-        }
+        this.setState({
+            showMenu: !this.state.showMenu
+        })
     }
 
     render(){
@@ -63,14 +64,7 @@ class Navbar extends Component {
                                 </li>
                                 <li>
                                     <span className="loginSignup" onClick={this.showMenu}></span>
-                                    <div className="loginSignupMenu">
-                                        <div>
-                                            <button className="guestLogin">ورود</button>
-                                        </div>
-                                        <div>
-                                            <button className="guestSignUp">ثبت‌نام</button>
-                                        </div>
-                                    </div>
+                                    {this.state.showMenu ? <ShowMenu/>: null}
                                 </li>
                             </ul>
                         </div>
