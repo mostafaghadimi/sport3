@@ -118,7 +118,18 @@ class PlayerInformation extends Component {
                     <p>- زیرآبی رفتن در لوپ دانشکده کامپیوتر</p>
                     <p>- پاس کردن درس برنامه نویسی پیشرفته</p>
                     <p>- پریدن از دایو شش متری</p>
-
+                </div>
+                <hr/>
+                <div className="playerNews">
+                    <span>اخبار</span>
+                    <p className="playerNewsContent">
+                      <p className="playerNewsTitle">فتح دانشکده‌ی مهندسی کامپیوتر دانشگاه صنعتی شریف توسط مهران اصغری با ....</p>  
+                      <p className="playerNewsDate">97/09/16</p>
+                    </p>
+                    <p className="playerNewsContent">
+                      <p className="playerNewsTitle">مهران اصغری با عقد قراردادی 3 ساله از باشگاه ابراهیم به پرسپولیس پیوست</p>  
+                      <p className="playerNewsDate">97/09/12</p>
+                    </p>
                 </div>
             </div>
         )
