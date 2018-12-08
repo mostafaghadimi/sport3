@@ -55,21 +55,22 @@
 }
 
 .playerNewsTitle {
-    display: inline-block;
     padding: 5px;
 }
 
 .playerNewsDate {
-    float: left;
     background-color: rgb(95, 0, 0);
     color: white;
     padding: 5px;
+    text-align: center;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
 
 .playerNewsContent {
+    display: grid;
     margin-top: 5px;
+    grid-template-columns: auto 80px;
 }
 
 .appearanceNumber, 

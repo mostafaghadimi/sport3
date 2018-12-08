@@ -127,8 +127,8 @@ class PlayerInformation extends Component {
                       <p className="playerNewsDate">97/09/16</p>
                     </p>
                     <p className="playerNewsContent">
-                      <p className="playerNewsTitle">مهران اصغری با عقد قراردادی 3 ساله از باشگاه ابراهیم به پرسپولیس پیوست</p>  
-                      <p className="playerNewsDate">97/09/12</p>
+                      <span className="playerNewsTitle">مهران اصغری با عقد قراردادی 3 ساله از باشگاه ابراهیم به پرسپولیس پیوست</span>  
+                      <span className="playerNewsDate">97/09/12</span>
                     </p>
                 </div>
             </div>
@@ -137,5 +137,3 @@ class PlayerInformation extends Component {
 }
 
 export default PlayerInformation;
-
-
