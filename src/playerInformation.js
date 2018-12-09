@@ -74,7 +74,7 @@ class PlayerInformation extends Component {
         return (
             <div className="playerInformation">
                 <div className="playerImage">
-                    <img src={this.props.url} alt={this.props.playerName} align="top"/>
+                    <img src={this.props.url} alt={this.props.playerName} align="top" className="playerImageTag"/>
                     <div className="playerName">
                         {this.props.playerName}
                         <p>سن: {this.props.age}</p>
@@ -84,7 +84,6 @@ class PlayerInformation extends Component {
                         <p>تیم: {this.props.team}</p>
                         <p>ملیت: {this.props.nationality}</p>
                     </div>
-
                 </div>
                 <hr/>
                 <div className="playerStatistics">

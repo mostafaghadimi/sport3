@@ -12,11 +12,13 @@
     margin: 10px 0;
 }
 
-.playerAwards, .playerNews {
+.playerAwards, 
+.playerNews {
     margin: 10px 0;
 }
 
-.playerAwards > span, .playerNews > span {
+.playerAwards > span, 
+.playerNews > span {
     font-size: 20px;
 }
 
@@ -28,7 +30,7 @@
 }
 
 
-.playerImage > img {
+.playerImageTag {
     max-width: 200px;
     max-height: 200px;
     width: auto;
