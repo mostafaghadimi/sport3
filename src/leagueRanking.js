@@ -14,6 +14,7 @@ class LeagueRanking extends Component {
                     <option>لوشامپیونه فرانسه</option>
                 </select>
                 <div className="leagueRankingTable">
+                {/* TODO: Alphabetic and Score Sorting  */}
                     <table cellSpacing="0">
                         <thead>
                             <tr>

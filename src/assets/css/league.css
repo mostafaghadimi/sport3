@@ -135,8 +135,7 @@
 }
 
 .relatedHighlights {
-    display: flex;
-    justify-content: center;
+    /* align-items: center; */
 }
 
 .relatedHighlights > button {
