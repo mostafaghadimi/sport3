@@ -1,5 +1,6 @@
 form {
     margin: 20px;
+    z-index: -2;
 }
 
 
@@ -106,17 +107,17 @@ form.commentSubmit textarea:focus+label {
     width: 50%;
     margin: auto;
     background-color: #e6e6e6;
-
+    cursor: pointer;
 }
 
 .commentSendButton:hover{
     background-color: #0077ff;
     color: white;
-    transition-duration: 1s;
+    transition-duration: 0.3s;
 }
 
 .commentSendButton:not(:hover){
-    transition-duration: 1s;
+    transition-duration: 0.3s;
 }
 
 .commentSendButton:hover::before {

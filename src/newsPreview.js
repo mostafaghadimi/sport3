@@ -8,9 +8,7 @@ class NewsPreview extends Component {
         return (
             <div className="newsPreviewContainer">
                 <div className="newsPreview">
-                    <div className="newsPreviewImage">
-                        <img src={require('./assets/img/newsImage.jpg')} alt="football" />
-                    </div>
+                    <img className={'news-prev-image'} src={require('./assets/img/newsImage.jpg')} alt="football" />
                     <div className="newsPreviewTitle">
                         به به اوس اکبر چطوری
                     </div>
