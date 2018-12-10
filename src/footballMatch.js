@@ -28,8 +28,91 @@ class FootballMatch extends Component {
                         </div>
                     </div>
                 </div>
-                <div>
-                    
+                <div className="matchTeamsArrangement">
+                    <div className="matchHostArrangement">
+                        <div>
+                            شماره
+                        </div>
+                        <div>
+                            نام بازیکن
+                        </div>
+                        <div>
+                            1
+                        </div>
+                        <div>دیوید دخیا</div>
+                        <div>
+                           4
+                        </div>
+                        <div>
+                            فیل جونز
+                        </div>
+                        <div>
+                           12
+                        </div>
+                        <div>
+                            کریس اسمالینگ
+                        </div>
+                        <div>
+                            18
+                        </div>
+                        <div>
+                            اشلی یانگ
+                        </div>
+                        <div>
+                           20
+                        </div>
+                        <div>
+                           دیوگو دالوت
+                        </div>
+                        <div>
+                           14
+                        </div>
+                        <div>
+                            جسی لینگارد
+                        </div>
+                    </div>
+                    <div className="matchGuestArrangement">
+                    <div>
+                            شماره
+                        </div>
+                        <div>
+                            نام بازیکن
+                        </div>
+                        <div>
+                            1
+                        </div>
+                        <div>دیوید دخیا</div>
+                        <div>
+                           4
+                        </div>
+                        <div>
+                            فیل جونز
+                        </div>
+                        <div>
+                           12
+                        </div>
+                        <div>
+                            کریس اسمالینگ
+                        </div>
+                        <div>
+                            18
+                        </div>
+                        <div>
+                            اشلی یانگ
+                        </div>
+                        <div>
+                           20
+                        </div>
+                        <div>
+                           دیوگو دالوت
+                        </div>
+                        <div>
+                           14
+                        </div>
+                        <div>
+                            جسی لینگارد
+                        </div>
+                    </div>
                 </div>
             </div>
     

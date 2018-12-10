@@ -44,6 +44,33 @@
     justify-content: center;
 }
 
+.matchTeamsArrangement {
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    grid-column-gap: 10px;
+}
+
+
+.matchHostArrangement {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+.matchHostArrangement,
+.matchGuestArrangement {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    text-align: center;
+}
+
+.matchHostArrangement div,
+.matchGuestArrangement div{
+    border-bottom: 1px solid rgb(209, 209, 209);
+}
+
 
 @media (max-width: 960px) {
     .footballMatchContainer {
