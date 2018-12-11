@@ -189,16 +189,17 @@ progress[value]::-webkit-progress-value{
     color: orangered;
 }
 
-.matchNews {
+.matchNews, .matchLiveReport {
     background-color: #fff;
     border-radius: 10px;
-
 }
 
-.matchNewsTitle {
+
+.matchNewsTitle, .matchLiveReportTitle {
     text-align: center;
     padding: 5px;
     background-color: grey;
+    color: white;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -212,6 +213,12 @@ progress[value]::-webkit-progress-value{
 .matchNewsContent {
     display: grid;
     grid-template-columns: 2fr 8fr;
+}
+
+.matchNewsContent > div,
+.matchLiveReportContent {
+    padding: 10px;
+    text-align: justify;
 }
 
 .matchNewsContent > img {

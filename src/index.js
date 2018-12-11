@@ -30,7 +30,7 @@ class App extends Component {
                 </div>
                 <FootballMatch/>
                 <League/>
-                {/* <PlayerInformation url={require('./assets/img/MehranAsghari.jpg')} playerName={'مهران اصغری'} age={20} position={'اون پشتا'} weight={71} height={180} team={'پرسپولیس'} nationality={'ایران'} appearanceNo={10} goalNo={2} assistNo = {1} yellowCards={3} redCards={1}/> */}
+                <PlayerInformation url={require('./assets/img/MehranAsghari.jpg')} playerName={'مهران اصغری'} age={20} position={'اون پشتا'} weight={71} height={180} team={'پرسپولیس'} nationality={'ایران'} appearanceNo={10} goalNo={2} assistNo = {1} yellowCards={3} redCards={1}/>
             </div>
 
         )
