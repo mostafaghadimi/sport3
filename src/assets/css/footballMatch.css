@@ -189,6 +189,39 @@ progress[value]::-webkit-progress-value{
     color: orangered;
 }
 
+.matchNews {
+    background-color: #fff;
+    border-radius: 10px;
+
+}
+
+.matchNewsTitle {
+    text-align: center;
+    padding: 5px;
+    background-color: grey;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.matchNewsContainer {
+    display: grid;
+    grid-row-gap: 10px;
+    padding: 10px;
+}
+
+.matchNewsContent {
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+}
+
+.matchNewsContent > img {
+    max-width: 130px;
+    max-height: 130px; 
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+
 @media (max-width: 960px) {
     .footballMatchContainer {
         width: 80%;

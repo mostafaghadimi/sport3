@@ -190,6 +190,32 @@ class FootballMatch extends Component {
                     </div>
 
                 </div>
+                <div className="matchNews">
+                    <div className="matchNewsTitle">
+                        اخبار بازی
+                    </div>
+                    <div className="matchNewsContainer">
+                        <div className="matchNewsContent">
+                        <img src={require('./assets/img/manu-fulham.jpg')} />
+                            <div>
+                            منچستر یونایتد اولین پیروزی لیگ برتر را در پنج بازی با پیروزی 4-1 راحت در برابر فولهام پایین در اولدترافورد به دست آورد.
+
+یك بار دیگر با پول پاگبا در نیمکت نشست، یونایتد هیچ وقت در یافتن یك ریتم شكست نیافت، زیرا اشلی یانگ اولین گل خود را در تمام رقابت ها برای یونایتد از سال 2017 به ثمر رساند تا توپ را در دقیقه 13 به پایان برساند.
+                            </div>
+                        </div>
+                        <hr/>
+                        <div className="matchNewsContent">
+                            <img src={require('./assets/img/manu-fulham1.jpg')} />
+                            <div>
+                            خوان ماته سپس یک گل دوم را به ثمر رساند تا گل دوم خود را به ثمر برساند، در دقیقه 28، قبل از اینکه Romelu Lukaku گل اول خود را از ماه مارس به ثمر رساند تا قبل از نیمه اول گل سوم را به ثمر برساند.
+
+در دیدار با یک تفاوت منفی منفی، یونایتد نیاز به یک عملکرد اعتمادسازی داشت و مسابقه علیه دفاع متضاد لیگ برتر، همان چیزی بود که دکتر دستور داد.
+                            </div>
+                        </div>
+                        <hr/>
+
+                    </div>
+                </div>
             </div>
     
         )
