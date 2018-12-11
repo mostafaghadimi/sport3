@@ -39,12 +39,21 @@ class FootballMatch extends Component {
                         <div>
                             1
                         </div>
-                        <div>دیوید دخیا</div>
+                        <div className="matchBestPlayer">دیوید دخیا</div>
                         <div>
                            4
                         </div>
                         <div>
                             فیل جونز
+                            <br/>
+                            <i className="fas fa-exchange-alt">
+                            </i>
+                            <span className="matchSubstitutionMinute">
+                                16
+                            </span>
+                            <span className="matchSubstitutionPlayer">
+                                مارکوس روخو
+                            </span>
                         </div>
                         <div>
                            12
@@ -168,6 +177,18 @@ class FootballMatch extends Component {
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className="footballMatchTimeline">
+                    <div>
+                        <img src={require('./assets/img/manchester-united.png')} />
+                        منچستر یونایتد
+                    </div>
+                    <div></div>
+                    <div>
+                        <img src={require('./assets/img/fulham.png')} />
+                        فولهام
+                    </div>
+
                 </div>
             </div>
     
