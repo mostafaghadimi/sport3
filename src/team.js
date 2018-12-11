@@ -19,7 +19,43 @@ class Team extends Component {
                         </div>
                     </div>
                 </div>
-                <div className=""></div>
+                <hr/>
+                <div className="teamMatchPlayer">
+                    <div className="teamPlayers">
+                        
+                        <div className="teamPlayerContainer">
+
+                            <div>عکس</div>
+                            <div>نام بازیکن</div>
+                            <div>پست</div>
+
+                            <div className="teamPlayerPic">
+                                <img src={require('./assets/img/MehranAsghari.jpg')} />
+                            </div>
+                            <div>مهران اصغری</div>
+                            <div>حمله</div>
+
+                            <div className="teamPlayerPic">
+                                <img src={require('./assets/img/MehranAsghari.jpg')} />
+                            </div>
+                            <div>اکبر غیوری</div>
+                            <div>دفاع</div>
+
+
+                            <div className="teamPlayerPic">
+                                <img src={require('./assets/img/MehranAsghari.jpg')} />
+                            </div>
+                            <div>مهران اکبری</div>
+                            <div>دروازه‌بان</div>
+                        </div>
+                    </div>
+                    <div className="teamFixture">
+                        <div className="fixtureFilter">
+                            <button>برد/باخت</button>
+                            <button>تاریخ</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         )
     }
