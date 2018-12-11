@@ -11,7 +11,7 @@ export default class News extends Component {
                 <div className={'news-title'}>{this.props.title}</div>
                 <img className={'news-prev-image'} src={this.props.image_src} alt={this.props.image_alt} />
                 <div className={'news-meta'}>
-                    <div className={'news-date'}>تاریخ: {this.props.date}</div>
+                    <div className={'news-date'}><i class="far fa-calendar-alt"></i>تاریخ: {this.props.date}</div>
                     <div className={'news-source'}>منبع: {this.props.source}</div>
                 </div>
                 <div className={'news-content'}>
@@ -32,6 +32,12 @@ export default class News extends Component {
                             )
                         }
                     })}
+                </div>
+                <div className={'news-tags'}>
+                    برچسب ها:&nbsp;
+                    {this.props.tags.map((tag, id) => (
+                        <a key={'id'} href={'#'}>{tag}</a>
+                    ))}
                 </div>
             </div>
             <div className={'commentNews'}>

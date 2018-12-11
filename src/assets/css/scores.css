@@ -1,0 +1,52 @@
+.scores-container {
+    margin-top: 120px;
+    position: relative;
+  }
+  
+.score-previews_container {
+    flex-grow: 5;
+    z-index: -2;
+    max-height: 80vh;
+    position: absolute;
+    right: 0;
+}
+
+.scores-options {
+    position: fixed;
+    left: 0;
+    top: 120px;
+    bottom: 30px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 25px 10px;
+    margin: 10px;
+    text-align: center;
+    overflow-y: scroll
+}
+  
+.scores-calendar {
+    margin: 20px auto;
+}
+
+@media (min-width: 769px) {
+    .scores-options {
+        width: 38%;
+        display: block;
+    }
+    .score-previews_container {
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    .scores-options:not(.active) {
+        display: none;
+    }
+    .scores-options.active {
+        display: block;
+        z-index: 10;
+    }
+    .score-previews_container {
+        width: 100%;
+    }
+}

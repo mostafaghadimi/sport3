@@ -38,6 +38,24 @@
     display: block;
 }
 
+.news-date > .far {
+    margin: 0 5px;
+}
+
+.news-tags {
+    margin: 15px 40px;
+}
+
+.news-tags > a {
+    margin: 0 10px;
+    color: rgb(93, 66, 189)
+}
+
+.news-tags > a:hover {
+    color: rgb(160, 47, 150);
+    border-bottom: 1px solid rgb(160, 47, 150);
+}
+
 .news-source {
     font-size: 80%;
     position: absolute;

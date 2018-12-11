@@ -38,7 +38,7 @@
     width: 100%;
 }
 
-.active {
+.subnav .active {
     font-weight: bold;
     border-bottom: 2px rgb(202, 23, 23) solid;
 }
