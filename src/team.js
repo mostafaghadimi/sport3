@@ -79,12 +79,15 @@ class Team extends Component {
                     </div>
                 </div>
             </div>
+            <div className="team-scores">
                 <div className="teamFixture">
                     <div className="fixtureFilter">
                         <button>امتیازات</button>
                     </div>
                 </div>
                 <Scores />
+            </div>
+
 
 
             </div>

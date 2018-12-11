@@ -168,7 +168,7 @@ progress[value]::-webkit-progress-value{
     border-radius: 10px;
 }
 
-.footballMatchTimeline div {
+.footballMatchTimeline > div:not(.timeline) {
     display: flex;
     flex-direction: row;
 }

@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 
 import './assets/css/footballMatch.css'
+import TimeLine from './timeline';
+
 
 class FootballMatch extends Component {
     render () {
@@ -183,7 +185,7 @@ class FootballMatch extends Component {
                         <img src={require('./assets/img/manchester-united.png')} />
                         منچستر یونایتد
                     </div>
-                    <div></div>
+                    <TimeLine time={60} />
                     <div>
                         <img src={require('./assets/img/fulham.png')} />
                         فولهام
