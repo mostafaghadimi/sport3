@@ -5,7 +5,7 @@
 }
 
 .newsPreview {
-    width: 60%;
+    width: 70%;
     margin: auto;
     margin-top: 20px;
     border-radius: 10px;
@@ -35,4 +35,21 @@
 
 .fa-comment, .fa-eye {
     margin: 4px;
+}
+
+@media (max-width: 960px) {
+    
+    .newsPreview {
+        width: 80%
+    }
+}
+@media (max-width: 768px) {
+    .newsPreview {
+        width: 90%
+    }
+}
+@media (max-width: 540px) {
+    .newsPreview {
+        width: 90%
+    }
 }

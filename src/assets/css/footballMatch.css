@@ -10,6 +10,7 @@
     padding: 5px;
     text-align: center;
     background-color: rgb(129, 129, 129);
+    color: white;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -75,6 +76,7 @@
     width: 100%;
     text-align: center;
     background-color: rgb(129, 129, 129);
+    color: white;
     padding: 5px;
 
 }
@@ -203,8 +205,8 @@ progress[value]::-webkit-progress-value{
 .matchMediaTitle {
     text-align: center;
     padding: 5px;
-    background-color: grey;
-    color: white;
+    background-color: rgb(129, 129, 129);
+    color: white;    /* color: white; */
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }

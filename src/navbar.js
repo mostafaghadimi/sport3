@@ -7,6 +7,7 @@ class Navbar extends Component {
         super(props);
         this.menuIcon = this.menuIcon.bind(this);
         this.showMenu = this.showMenu.bind(this);
+        this.hideMenu = this.hideMenu.bind(this);
 
         this.state = {
             showMenu: false
@@ -33,8 +34,17 @@ class Navbar extends Component {
 
     showMenu(){
         this.setState({
-            showMenu: !this.state.showMenu
+            showMenu: true
         })
+
+        document.addEventListener('click', this.hideMenu)
+    }
+
+    hideMenu(){
+        this.setState({
+            showMenu: false
+        })
+        document.removeEventListener('click', this.hideMenu)
     }
 
     render(){
