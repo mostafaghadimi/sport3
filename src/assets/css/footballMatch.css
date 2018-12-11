@@ -189,13 +189,18 @@ progress[value]::-webkit-progress-value{
     color: orangered;
 }
 
-.matchNews, .matchLiveReport {
+.matchNews, 
+.matchLiveReport,
+.matchMedia {
     background-color: #fff;
     border-radius: 10px;
+    margin: 10px 0;
 }
 
 
-.matchNewsTitle, .matchLiveReportTitle {
+.matchNewsTitle,
+.matchLiveReportTitle,
+.matchMediaTitle {
     text-align: center;
     padding: 5px;
     background-color: grey;
@@ -228,6 +233,12 @@ progress[value]::-webkit-progress-value{
     height: auto;
     margin: auto;
 }
+
+.slideshowContainer > img {
+    max-width: 100%;
+}
+
+
 
 @media (max-width: 960px) {
     .footballMatchContainer {

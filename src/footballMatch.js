@@ -225,6 +225,16 @@ class FootballMatch extends Component {
 در دقایق ابتدایی اگرچه اتفاق خاصی روی دروازه ها رخ نداد اما منچستریونایتد از همان ابتدا حاکم توپ و میدان بوده و حملاتی را روی دروازه فولام ترتیب داد. اما در دقیقه 13 میزبان به گل رسید. اشلی یانگ با یک حرکت انفرادی از جناح چپ وارد محوطه جریمه شده و با یک ضربه محکم و دیدنی موفق شد گل اول یونایتد را به ثمر برساند.
                     </div>
                 </div>
+                <div className="matchMedia">
+                    <div className="matchMediaTitle">
+                        عکس‌ها و فیلم‌ها
+                    </div>
+                    {/* TODO: create Slideshow here :)) */}
+                    <div className="slideshowContainer">
+                        <img src={require('./assets/img/manu-fulham.jpg')} />
+                    </div>
+                    
+                </div>
             </div>
     
         )
