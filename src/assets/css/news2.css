@@ -8,7 +8,7 @@
     border-radius: 8px;
     position: relative;
     overflow: hidden;
-    margin: 10px;
+    margin: 10px 0;
 }
 
 .news-prev-image {
@@ -131,4 +131,20 @@
 
 hr {
     margin-top: 5px;
+}
+
+@media (max-width: 960px){
+    .news-feed-container {
+        width: 80%;
+    }
+}
+@media (max-width: 768px){
+    .news-feed-container {
+        width: 90%;
+    }
+}
+@media (max-width: 540px){
+    .news-feed-container {
+        width: 90%;
+    }
 }

@@ -7,6 +7,24 @@
     background-color: #fff;
 }
 
+@media (max-width: 960px){
+    .leagueRanking {
+        width: 80%;
+    }
+}
+@media (max-width: 768px){
+    .leagueRanking {
+        width: 90%
+    }
+
+}
+@media (max-width: 540px){
+    .leagueRanking {
+        width: 90%
+    }
+
+}
+
 .leagueRankingSelection {
     width: 100%;;
     margin: 10px 0;

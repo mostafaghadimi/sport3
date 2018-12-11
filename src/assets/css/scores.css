@@ -1,40 +1,41 @@
 .scores-container {
-    margin-top: 120px;
-    position: relative;
+    display: flex;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    justify-content: space-between;
   }
   
-.score-previews_container {
-    flex-grow: 5;
-    z-index: -2;
-    max-height: 80vh;
-    position: absolute;
-    right: 0;
+.score-previews-container {
+    flex-grow: 1;
 }
 
 .scores-options {
-    position: fixed;
-    left: 0;
-    top: 120px;
-    bottom: 30px;
     background-color: white;
     border-radius: 8px;
     padding: 25px 10px;
-    margin: 10px;
-    text-align: center;
-    overflow-y: scroll
-}
-  
-.scores-calendar {
-    margin: 20px auto;
+    width: 40%;
 }
 
-@media (min-width: 769px) {
-    .scores-options {
-        width: 38%;
-        display: block;
+.scores-options > .scores-calendar {
+    margin: auto;
+}
+
+.options-button > .fas {
+    font-size: 120%;
+}
+
+.options-button {
+    display: none;
+    cursor: pointer;
+}
+
+@media (min-width: 766px) {
+    .score-previews-container {
+        margin-left: 10px;
     }
-    .score-previews_container {
-        width: 60%;
+    .scores-options {
+        max-height: 80vh;
     }
 }
 
@@ -45,8 +46,41 @@
     .scores-options.active {
         display: block;
         z-index: 10;
+        width: 100%;
+        padding: 0;
+        position: fixed;
+        right: 0;
+        top: 100px;
+        height: 100%;
+        border-radius: 0;
+    }
+    .options-button {
+        display: block;
+        position: fixed;
+        top: 73px;
+        left: 15px;
+        z-index: 10;
     }
     .score-previews_container {
         width: 100%;
+    }
+}
+
+
+@media (max-width: 960px) {
+    .scores-container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .scores-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 540px) {
+    .scores-container{
+        width: 90%;
     }
 }
