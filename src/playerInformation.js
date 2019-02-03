@@ -90,7 +90,8 @@ class PlayerInformation extends Component {
                     <select>
                         <option>لیگ برتر (خلیج فارس)</option>
                         <option>لیگ قهرمانان آسیا</option>
-                        <option>جام حذفی</option>
+                        <option> 95-96 جام حذفی</option>
+                        <option> 96-97 جام حذفی</option>
                         <option>سوپر جام</option>
                     </select>
                     <div className="playerStatisticsContainer">

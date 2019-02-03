@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import './assets/css/league.css'
 import './leagueRanking.js'
 import LeagueRanking from './leagueRanking.js';
+import Schedule from './schedule';
 
 class League extends Component {
     render() {
@@ -109,6 +110,7 @@ class League extends Component {
                     </div>
                 </div>
                 <LeagueRanking/>
+                <Schedule/>
             </div>
         )
     }

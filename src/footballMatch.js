@@ -92,36 +92,36 @@ class FootballMatch extends Component {
                         <div>
                             1
                         </div>
-                        <div>دیوید دخیا</div>
+                        <div>اوس اکبر</div>
                         <div>
                            4
                         </div>
                         <div>
-                            فیل جونز
+                            دایی ناصر
                         </div>
                         <div>
                            12
                         </div>
                         <div>
-                            کریس اسمالینگ
+                            امیرهوشنگ
                         </div>
                         <div>
                             18
                         </div>
                         <div>
-                            اشلی یانگ
+                            ایرج ملکی
                         </div>
                         <div>
                            20
                         </div>
                         <div>
-                           دیوگو دالوت
+                           شیث رضایی
                         </div>
                         <div>
                            14
                         </div>
                         <div>
-                            جسی لینگارد
+                            ممد نصرتی
                         </div>
                     </div>
                 </div>
@@ -231,9 +231,14 @@ class FootballMatch extends Component {
                     <div className="matchMediaTitle">
                         عکس‌ها و فیلم‌ها
                     </div>
-                    {/* TODO: create Slideshow here :)) */}
                     <div className="slideshowContainer">
                         <img src={require('./assets/img/manu-fulham.jpg')} />
+                    </div>
+                    <div className="slideshowContainer">
+                       <video controls width="100%">
+                            <source src={require('./assets/video/1.mp4')}/>
+
+                       </video>
                     </div>
                     
                 </div>

@@ -51,6 +51,17 @@ class Team extends Component {
                             <div>دروازه‌بان</div>
                         </div>
                     </div>
+                    <div style={{display: 'flex', justifyContent: 'center', flexDirection:'column', textAlign: 'center'}}>
+                        <input type='text' ref={(userInput) => this.input = 
+                            userInput}/>
+                        <button>فیلتر</button>
+                        <datalist id="postsfootball">
+                            <option value="حمله"/>
+                            <option value="هافبک"/>
+                            <option value="دفاع" />
+                            <option value="دروازه‌بان"/>
+                        </datalist>
+                    </div>
                 </div>
                 <div className="matchNews">
                     <div className="matchNewsTitle">

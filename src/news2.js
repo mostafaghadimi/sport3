@@ -62,6 +62,17 @@ export default class News extends Component {
                         بسیار عالی بود بسی لذت بردم عزیزان
                     </div>
                 </div>
+                <div className="playerNews" style={{backgroundColor: 'white', padding: '10px', borderRadius: '10px'}}>
+                    <span> اخبار مرتبط</span>
+                    <p className="playerNewsContent">
+                      <p className="playerNewsTitle">فتح دانشکده‌ی مهندسی کامپیوتر دانشگاه صنعتی شریف توسط مهران اصغری با ....</p>  
+                      <p className="playerNewsDate">97/09/16</p>
+                    </p>
+                    <p className="playerNewsContent">
+                      <span className="playerNewsTitle">مهران اصغری با عقد قراردادی 3 ساله از باشگاه ابراهیم به پرسپولیس پیوست</span>  
+                      <span className="playerNewsDate">97/09/12</span>
+                    </p>
+                </div>
             </div>
         )
     }
